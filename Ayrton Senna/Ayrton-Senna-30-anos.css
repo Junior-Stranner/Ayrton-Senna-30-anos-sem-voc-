@@ -1,0 +1,89 @@
+/* Estilo geral */
+body {
+    background-color: #fff;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container da imagem e música */
+  .container {
+    width: 500px;
+    height: 500px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  /* Imagem de Ayrton Senna */
+  .imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Posicionamento da música */
+  .musica {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ccc;
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+  }
+  
+  /* Controles da música */
+  .controles-musica {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Botão de play/pause */
+  .play-pause {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Ícone de play/pause */
+  .play-pause::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    transform: rotate(45deg);
+  }
+  
+  /* Botão de parar */
+  .stop {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  /* Ícone de parar */
+  .stop::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+  }
+  

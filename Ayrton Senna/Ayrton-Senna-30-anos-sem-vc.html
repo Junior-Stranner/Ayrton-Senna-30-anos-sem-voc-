@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ayrton Senna - Fundo Personalizado</title>
+<link rel="stylesheet" href="Ayrton-Senna-30-anos.css"> <!-- Adiciona o link para o arquivo CSS -->
+<style>
+  /* Estilo geral */
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #0C0C0C; /* Cor de fundo mais escura */
+    color: #FFF; /* Cor do texto */
+    font-family: 'Arial', sans-serif;
+  }
+
+  /* Estilo do container */
+  .container {
+    width: 800px; /* Aumenta o tamanho do container */
+    height: 600px; /* Aumenta o tamanho do container */
+    margin: 50px auto; /* Centraliza na página */
+    position: relative;
+    overflow: hidden; /* Impede que o conteúdo saia do container */
+    border-radius: 20px; /* Borda arredondada */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra */
+  }
+
+  /* Estilo da imagem */
+  .imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px; /* Borda arredondada */
+  }
+
+  /* Estilo do brilho sobre a imagem */
+  .container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 75%); /* Brilho suave */
+  }
+
+  /* Estilo do texto de aniversário */
+  .aniversario {
+    position: absolute;
+    top: 10px; /* Distância do topo */
+    right: 230px; /* Distância do lado direito aumentada */
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right; /* Alinhamento à direita */
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra do texto */
+}
+
+/* Estilo do botão de reprodução/pausa */
+.play-pause {
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente */
+    left: 50px; /* Distância do lado esquerdo */
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 24px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+    <audio controls autoplay loop>
+      <source src="https://www.youtube.com/watch?v=oMa1tQC2W8M" type="audio/mpeg">
+      Seu navegador não suporta o elemento de áudio.
+    </audio>
+    <img class="imagem" src="imagem-Senna.jpeg" alt="Ayrton Senna">
+    <div class="aniversario">30 anos sem você, Ayrton Senna (21/03/1960 - 01/05/1994)</div>
+</div>
+</body>
+</html>
